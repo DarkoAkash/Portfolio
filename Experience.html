@@ -3,30 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Ans Experience</title>
+    <title>Projects And Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">Darko_Akash</a>
 
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#" >Services</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="Experience.html" class="active">Experience</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <section class="experience-section">
+        <div class="section-title fade-in">
+            <h1>My <span>Journey</span></h1>
+            <p>Exploring the world of code and creativity</p>
+        </div>
 
-    <h2>Projects</h2>
-    <p>I have done many projects like developing a <b>Minecraft Client (Silk Client)</b>, Have Made Website, Dashboard For 
-        Staff, Admin Panel For Admins. But Now I am currently working on my biggest project which is <b>Flux Marketplace</b>
-        This is a marketplace where you can explore no. of talents around the world. This is under development but you can
-        the <a href="https://discord.gg/yacc3rUDhT">discord</a> server.
-    </p>
+        <div class="timeline fade-in">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2022</h3>
+                    <p>Started learning Python and created Discord bots</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2023</h3>
+                    <p>Mastered Java and Web Development</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2024</h3>
+                    <p>Learning C++ for Game Development</p>
+                </div>
+            </div>
+        </div>
 
-    <h2>Experience</h2>
-    <p>It has been something like 2yrs that I have explored programing in which I have learnt many languages like Python (Discord Bot), Java, HTML, CSS, JS.</p>
+        <div class="projects-section">
+            <h2 class="section-subtitle fade-in">Featured <span>Projects</span></h2>
+            <div class="project-grid">
+                <div class="project-card gradient-border slide-in">
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Silk Client</h3>
+                    <p>A custom Minecraft client with enhanced features and optimization.</p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>OpenGL</span>
+                        <span>Minecraft API</span>
+                    </div>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+
+                <div class="project-card gradient-border slide-in">
+                    <div class="project-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Flux Marketplace</h3>
+                    <p>A marketplace platform connecting global talents.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Discord.py</span>
+                        <span>Web API</span>
+                    </div>
+                    <a href="https://discord.gg/yacc3rUDhT" class="btn">Join Discord</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <h2 class="section-subtitle fade-in">Technical <span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-tooltip="Discord Bot Development">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item" data-tooltip="Application Development">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item" data-tooltip="Game Development">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                            <div class="skill-level">Learning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Footer content same as index.html -->
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
